@@ -68,9 +68,11 @@
               <div class="col-12 col-lg-2 mb-2 d-flex justify-content-center align-items-center">
                 <button type="submit" class="btn btn-success btn-lg">產生幹話</button>
               </div>
+              {{#if trashTalk}}
               <div class="col-12 col-lg-10 d-flex justify-content-center">
-                <textarea class="col-12"></textarea>
+                <textarea class="col-12 bg-warning">{{trashTalk}}</textarea>
               </div>
+              {{/if}}
             </div>
 
           </form>
